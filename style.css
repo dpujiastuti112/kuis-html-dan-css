@@ -1,0 +1,47 @@
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+        
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: #f0f9ff;
+        }
+        
+        .quiz-card {
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        
+        .quiz-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+        }
+        
+        .option-btn {
+            transition: all 0.2s ease;
+        }
+        
+        .option-btn:hover {
+            transform: translateX(5px);
+        }
+        
+        .correct {
+            background-color: #d1fae5 !important;
+            border-color: #34d399 !important;
+        }
+        
+        .incorrect {
+            background-color: #fee2e2 !important;
+            border-color: #f87171 !important;
+        }
+        
+        .progress-bar {
+            transition: width 0.5s ease;
+        }
+        
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        
+        .fade-in {
+            animation: fadeIn 0.5s ease forwards;
+        }
+   
